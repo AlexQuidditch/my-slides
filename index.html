@@ -1,143 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" dir="ltr">
+
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Демонстрация</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="node_modules/shower-material/styles/screen-16x10.css">
+
+	<style>
+		.flex {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.flex .centered {
+			margin-bottom: 100px;
+		}
+		.flex._column {
+			flex-flow: column wrap;
+			padding-top: 0;
+		}
+		.code {
+			padding-top: 30px;
+		}
+		.code pre code {
+			font-size: 1rem;
+		}
+	</style>
+
 </head>
+
 <body class="shower list">
 
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Демонстрация для 14 мая</h1>
+		<p>Введение в Web development</p>
 	</header>
 
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+		<h2>Событие!</h2>
+		<p>Докладчик <a href="http://pepelsbey.net">Забайкальский Алексей</a></p>
 		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
+			<img class="cover" src="pictures/rocket.jpg" alt="Ракета в космос, уи!">
 		</figure>
 		<style>
 			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
+				margin: 150px 0 0;
+				color: white;
+				text-align: center;
+				font-size: 90px;
+			}
 			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
+				margin: 10px 0 0;
+				text-align: center;
+				color: white;
+				font-style: italic;
+				font-size: 20px;
+			}
+			#cover p a {
+				color: white;
+			}
 		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Shower key features</h2>
+		<h2>О чём расскажу?</h2>
 		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
+			<li>Что такое веб, и с чем его едят.</li>
+			<li>О браузерах. Ишаки - это плохо.</li>
+			<li>Как читать веб?</li>
+			<li>Цифровой "каменный" век</li>
+			<li>Как писать веб?</li>
+			<li>Котики в вебе.</li>
+			<li>Вы ещё здесь?</li>
 		</ol>
 	</section>
 
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
+	<section class="slide flex">
+		<h2 class="centered">Что такое веб?</h2>
 	</section>
 
 	<section class="slide">
-		<h2>Code samples</h2>
+		<p>Всеми́рная паути́на (англ. World Wide Web) — распределённая система, предоставляющая доступ к связанным между собой документам, расположенным на различных компьютерах, подключённых к Интернету. Для обозначения Всемирной паутины также используют слово веб (англ. web «паутина») и аббревиатуру WWW.</p>
+	</section>
+
+	<section class="slide">
+		<p>Всеми́рная паути́на (англ. World Wide Web) — распределённая система, предоставляющая доступ к связанным между собой документам, расположенным на различных компьютерах, подключённых к Интернету. Для обозначения Всемирной паутины также используют слово веб (англ. web «паутина») и аббревиатуру WWW.</p>
+		<p class="note">Да-да, спасибо, Википедия!</p>
+	</section>
+
+	<section class="slide flex">
+		<h2 class="centered">С чем "едят" веб?</h2>
+	</section>
+
+	<section class="slide">
+		<h2>HTTP</h2>
+		<ul>
+			<li>Протокол взаимодействия между клиентом и сервером</li>
+			<li>Отправка данных</li>
+			<li>Приём данных</li>
+			<li>Куча методов (GET, POST, PUT, DELETE, etc...)</li>
+			<li>Где почитать?</li>
+			<li>Где посмотреть в действии?</li>
+		</ul>
+	</section>
+
+	<section class="slide flex _column">
+		<h2>Схема работы:</h2>
+		<img src="./pictures/11_01.gif" alt="">
+	</section>
+
+	<section class="slide flex _column">
+		<h2>О браузерах.</h2>
+	</section>
+
+	<section class="slide flex _column">
+		<h2>Зоопарк:</h2>
+		<img src="./pictures/browsers.jpg" alt="Зоопарк браузеров">
+	</section>
+
+	<sectioon class="slide flex _column">
+		<h2>Почему их так много?</h2>
+	</sectioon>
+
+	<section class="slide">
+		<h2>Чем отличаются?</h2>
+		<ul>
+			<li>Реализация спецификаций</li>
+			<li>Движок</li>
+			<li>Разработчики</li>
+			<li>Функционал</li>
+			<li>Философия</li>
+		</ul>
+	</section>
+
+	<section class="slide flex _column">
+		<h2 style="text-align: center">Хотите заставить разработчика страдать?</h2>
+	</section>
+
+	<section class="slide flex _column">
+		<h2 style="text-align: center">Решение есть!</h2>
+	</section>
+
+	<section class="slide flex _column">
+		<img style="width: 300px;" src="./pictures/IE-logo.jpg" alt="" />
+	</section>
+
+	<section class="slide flex _column">
+		<p class="note">Драматическая пауза...</p>
+	</section>
+
+	<section class="slide flex _column">
+		<h2>Вы умеете читать?</h2>
+	</section>
+
+	<section class="slide code">
+		<h2>Что написано здесь?</h2>
 		<pre>
 			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
+			<code class="mark">&lt;html lang="ru"&gt;</code>
+			<code>	&lt;head&gt;</code>
+			<code>		&lt;meta charset="UTF-8"&gt;</code>
+			<code>		&lt;title&gt;Hello World!&lt;/title&gt;</code>
+			<code>		&lt;meta http-equiv="x-ua-compatible" content="ie=edge"&gt;</code>
+			<code>		&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code>
+			<code>		&lt;link rel="stylesheet" href="shower-material/styles/screen-16x10.css"&gt;</code>
+			<code>	&lt;/head&gt;</code>
+			<code>	&lt;body&gt;</code>
+			<code>		&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+			<code>	&lt;/body&gt;</code>
+			<code>&lt;/html&gt;</code>
 		</pre>
 	</section>
 
 	<section class="slide">
+		<h2>HTML</h2>
+		<ul>
+			<li>HyperText Markup Language — язык гипертекстовой разметки</li>
+			<li>Повсеместно распространён</li>
+			<li>Декларативен</li>
+			<li>Относительно прост</li>
+			<li><b>Текущая рекомендуемая версия спецификации - 5.1</b></li>
+		</ul>
+	</section>
+
+	<section class="slide code">
+		<h2>А здесь?</h2>
+		<pre>
+			<code>.flex {</code>
+			<code>	display: flex;</code>
+			<code>	justify-content: center;</code>
+			<code>	align-items: center;</code>
+			<code>}</code>
+			<code>.flex .centered {</code>
+			<code>	margin-bottom: 100px;</code>
+			<code>}</code>
+			<code>.code pre code {</code>
+			<code>	font-size: 1rem;</code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>CSS</h2>
+		<ul>
+			<li>Cascading Style Sheets —  язык описания внешнего вида документа</li>
+			<li>Повсеместно распространён</li>
+			<li>Декларативен</li>
+			<li>Относительно прост</li>
+			<li>Достаточно мощен</li>
+			<li><b>Текущая рекомендуемая версия спецификации - 3*</b></li>
+		</ul>
+		<p class="note">Далее спецификация делится на модули</p>
+	</section>
+
+	<section class="slide code">
+		<h2>Или вот здесь?</h2>
+		<pre>
+			<code>const button = document.getElementById('button');</code>
+			<code>button.addEventListener( 'click' , (e) => {</code>
+			<code>	e.preventDefault;</code>
+			<code>	console.log('Clicked!');</code>
+			<code>});</code>
+			<code>&nbsp;</code>
+			<code>class Convertable extends Array {</code>
+			<code>	convert() {</code>
+			<code>		let arr = [];</code>
+			<code>		this.forEach(value => arr.unshift(`Added! ${ value }`));</code>
+			<code>		return arr</code>
+			<code>	}</code>
+			<code>};</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>JavaScript</h2>
+		<ul>
+			<li>Интерпретируемый динамический слаботипизированный</li>
+			<li>Был создан за 10 дней</li>
+			<li>Легко начать</li>
+			<li>На нём пишут ВСЁ</li>
+			<li>Активно развивается</li>
+			<li><b>Спецификация ECMA-262, текущая версия - ECMAScript 2016 (ES7)</b></li>
+		</ul>
+	</section>
+
+	<section class="slide code">
+		<h2>А тут? :)</h2>
+		<pre>
+			<code>$queryType = new ObjectType([</code>
+			<code>    'name' => 'Query',</code>
+			<code>    'fields' => [</code>
+			<code>        'hello' => [</code>
+			<code>            'type' => Type::string(),</code>
+			<code>            'description' => 'Returning greatings',</code>
+			<code>            'resolve' => function () {</code>
+			<code>                return 'Hello GraphQL!';</code>
+			<code>            }</code>
+			<code>        ]</code>
+			<code>    ]</code>
+			<code>]);</code>
+		</pre>
+	</section>
+
+	<section class="slide flex _column">
+		<h2 style="text-align: center;">Это PHP, серверный язык программирования.</h2>
+	</section>
+
+	<section class="slide flex _column">
+		<p class="note">Драматическая пауза...</p>
+	</section>
+
+	<slide class="slide flex _column">
+		<h2 style="text-align: center;">Мы в каменном веке</h2>
+	</slide>
+
+	<section class="slide">
 		<h2>Even tables</h2>
 		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
+			<tr>
+				<th scope="col">Locavore</th>
+				<th>Umami</th>
+				<th>Helvetica</th>
+				<th>Vegan</th>
+			</tr>
+			<tr>
+				<th scope="row">Fingerstache</th>
+				<td>Kale</td>
+				<td>Chips</td>
+				<td>Keytar</td>
+			</tr>
+			<tr>
+				<th scope="row">Sriracha</th>
+				<td>Gluten-free</td>
+				<td>Ennui</td>
+				<td>Keffiyeh</td>
+			</tr>
+			<tr>
+				<th scope="row">Thundercats</th>
+				<td>Jean</td>
+				<td>Shorts</td>
+				<td>Biodiesel</td>
+			</tr>
+			<tr>
+				<th scope="row">Terry</th>
+				<td>Richardson</td>
+				<td>Swag</td>
+				<td>Blog</td>
+			</tr>
 		</table>
 		<p>It’s good to have information organized.</p>
 	</section>
@@ -152,8 +323,8 @@
 		</figure>
 		<style>
 			#picture h2 {
-				color:#FFF;
-				}
+				color: #FFF;
+			}
 		</style>
 	</section>
 
@@ -183,12 +354,13 @@
 		</h2>
 		<style>
 			#see-more h2 {
-				font-size:100px
-				}
+				font-size: 100px
+			}
+
 			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
+				width: 0.72em;
+				height: 0.72em;
+			}
 		</style>
 	</section>
 
@@ -202,4 +374,5 @@
 	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
 
 </body>
+
 </html>
